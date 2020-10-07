@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Team</title>
 
     <style>
         
@@ -12,12 +12,54 @@
             color:white;
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
             
-             ,url(pizza.jpg)no-repeat;
+                ,url(pizza.jpg)no-repeat;
             background-size: cover;
         }
+
+         ul{
+            float: right;
+        }
+         ul li{
+            
+            display: inline-block;
+            margin: 10px auto;
+            text-align: center;
+        }
+        
+        ul li a{ 
+            text-decoration: none;
+            color:darkgray;
+            padding: 5px 30px;           
+        }
+
+        
+        ul li:hover{ background-color: grey;}
+        ul li a:hover{ color:white;}
+        
+        .logo img{
+            float: left;
+            width: 150px;
+            height: 80px;
+            margin-top: 1px;
+            margin-left: 30px;
+        }
         </style>
-</head>
+</head> 
 <body>
-    
+    <header>
+        <div class="box">
+            <div class="logo">
+                
+                <a href="index.html"><img src="logo.png"  alt="Logo"></a>
+            </div>
+    <ul type="none">
+        <li><a href="home.html"> Home</a></li>
+        <li><a href="menu.html"> Menu</a></li>
+        <li><a href=""> Online Order</a></li>
+        <li><a href="team.html"> Team</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+        </ul>
+        </div>
+    </header>
 </body>
 </html>
