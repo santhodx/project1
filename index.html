@@ -4,101 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
-        
-        body{
+
+body{
             font-family: latha;
             color:white;
-            background: linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,0)
-            )
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+            
                 ,url(pizza.jpg)no-repeat;
             background-size: cover;
         }
-    
-        .box{ 
-            width: 900px;
-            float:right;
-            border:1px solid none;
-            }
-        
-        .box ul li{
-            width: 150px;
-            float:left;
+
+         ul{
+            float: right;
+        }
+         ul li{
+            
+            display: inline-block;
             margin: 10px auto;
             text-align: center;
         }
         
-        .box ul li a{ text-decoration: none;
-        color:darkgray;}
-        
-        .box ul li:hover{ background-color: grey;}
-        .box ul li a:hover{ color:white;}
-        
-        .wd{
-            width: 300px;
-            height: 539px;
-            background-color: black;
-            opacity: 0.9;
-            padding: 55px;
-        }
-        
-        .wd h1{
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 100px;
-        }
-        
-        .wd h4{
-            text-align: justify;
+        ul li a{ 
+            text-decoration: none;
             color:darkgray;
-            font-weight: normal;
+            padding: 5px 30px;           
         }
-    
-        .wd h2{
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: normal;
-            margin: 40px auto;
+
+        
+        ul li:hover{ 
+            background-color: grey;
+            }
+        ul li a:hover{ color:white;}
+        
+        .logo img{
+            float: left;
+            width: 150px;
+            height: 80px;
+            margin-top: 1px;
+            margin-left: 30px;
         }
         
-        .opt form , input[type="button"]{
-            background-color: black;
-            color:white;
-            padding:10px;
-            margin:-14px auto;
-            padding-left: 50px;
-            padding-right: 50px;
-            text-align: center;
+        .name{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        
-        form, input[type="button"]:hover{background-color: grey;}
+
+        .name h1{
+            font-style: unset;
+            font-size: 70px;
+            color:rgba(255, 68, 0, 0.705);
+        }
+        .button{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .link{
+            border: 1px solid #fff;
+            padding: 10 px 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
+    <header>
     <div class="box">
+        <div class="logo">    
+            <a href="index.html"><img src="logo.png"  alt="Logo"></a>
+        </div>
     <ul type="none">
-        <li><a href="index.html"> Home</a></li>
+        <li><a href="home.html"> About</a></li>
         <li><a href="menu.html"> Menu</a></li>
-        <li><a href=""> Online Order</a></li>
         <li><a href="team.html"> Team</a></li>
         <li><a href="contact.html"> Contact</a></li>
         </ul>
     </div>
-    
-    <div class="wd">
-    
-        <h1> Welcome!</h1>
-        
-        <h4> The webpage is under construction </h4>
-        
-        <h2> Reservation</h2>
-        <div class="opt">
-        <form action="" method="post">
-            <input type="button" value="Start Now">
-            </form>
-        
-        </div>
-    
-    
+</header>
+    <div class="name">
+        <h1>BBQ NATION</h1>
     </div>
+
+    <div class="button">
+        <a href="#" class="link">VIDEO</a>
+        <a href="#" class="link">IDK</a>
+    </div>
+    
 </body>
 </html>
