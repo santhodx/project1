@@ -15,6 +15,11 @@
                 ,url(pizza.jpg)no-repeat;
             background-size: cover;
         }
+        .box{
+            position: relative;
+            
+        }
+      
 
          ul{
             float: right;
@@ -31,7 +36,13 @@
             color:darkgray;
             padding: 5px 30px;           
         }
-
+        .menoo{
+   
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
         
         ul li:hover{ background-color: grey;}
         ul li a:hover{ color:white;}
@@ -70,14 +81,15 @@
                 <a href="index.html"><img src="logo.png"  alt="Logo"></a>
             </div>
     <ul type="none">
-        <li><a href="home.html"> About</a></li>
+        <li><a href="about.html"> About</a></li>
         <li><a href="menu.html"> Menu</a></li>
-        <li><a href="team.html"> Team</a></li>
+        <li><a href="team.html"> Gallery</a></li>
         <li><a href="contact.html"> Contact</a></li>
         </ul>
         </div>
     </header>
         
+    <div class="menoo">
             <h1>Menu</h1>
             <hr>
           
@@ -115,6 +127,7 @@
             <p>White: Sauvignon Blanc, Pinot Grigio</p>
             <p>Red: Merlot, Pinot Noir, Cabernet Sauvignon</p>
             </div>
+    </div>
         
       
 </body>
