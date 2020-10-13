@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
+    <title>Gallery</title>
 
     <style>
         
@@ -16,8 +16,15 @@
             background-size: cover;
         }
 
+        .box{
+            position: relative;
+            display: flex;
+            justify-content:space-evenly
+            }
+
          ul{
             float: right;
+            margin-right: -380px;
         }
          ul li{
             
@@ -41,7 +48,22 @@
             width: 150px;
             height: 80px;
             margin-top: 1px;
-            margin-left: 30px;
+            margin-left: -380px;
+        }
+
+        .photos{
+            margin: 10px 50px;
+        }
+
+        .photos img{
+            transition: 1s;
+            padding: 15px;
+
+        }
+
+        .photos img:hover{
+            filter: grayscale(50%);
+            transform: scale(1.1);
         }
         </style>
 </head> 
@@ -52,12 +74,20 @@
                 <a href="index.html"><img src="logo.png"  alt="Logo"></a>
             </div>
     <ul type="none">
-        <li><a href="home.html"> About</a></li>
+        <li><a href="about.html"> About</a></li>
         <li><a href="menu.html"> Menu</a></li>
-        <li><a href="team.html"> Team</a></li>
+        <li><a href="team.html"> Gallery</a></li>
         <li><a href="contact.html"> Contact</a></li>
         </ul>
         </div>
     </header>
+
+    <div class="photos">
+       <a href="images/food1.jpg"> <img src="images/food1.jpg" height="250" width="350"></a>
+       <a href="images/food2.jpg"> <img src="images/food2.jpg" height="250" width="350"></a>
+       <a href="images/food3.jpg"> <img src="images/food3.jpg" height="250" width="350"></a>
+       <a href="images/food4.jpg"> <img src="images/food4.jpg" height="250" width="350"></a>
+       <a href="images/food5.jpg"> <img src="images/food5.jpg" height="250" width="350"></a>
+    </div>
 </body>
 </html>
