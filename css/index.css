@@ -1,0 +1,101 @@
+body{
+    height: 100%;
+    font-family: latha;
+    color:white;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+    
+    ,url(../images/pizza.jpg)no-repeat;
+    background-size: cover;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content:space-evenly
+    }
+
+ ul{
+    float: right;
+    margin-right: -380px;
+}
+ ul li{
+    
+    display: inline-block;
+    margin: 10px auto; 
+    text-align: center;
+}
+
+ul li a{ 
+    text-decoration: none;
+    color:darkgray;
+    padding: 5px 30px;           
+}
+
+
+ul li:hover{ 
+    background-color: grey;
+    }
+ul li a:hover{ color:white;}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: 80px;
+    margin-top: 1px;
+    margin-left: -380px;
+}
+
+.main{
+    overflow: auto;
+    padding-bottom: 100px;
+
+}
+
+/* footer{
+    background-color:grey;
+    position: relative;
+    height: 100px;   
+    margin-top: -100px; 
+    margin-left: 0;  
+    clear:both;      
+} */
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name h1{
+    font-style: unset;
+    font-size: 70px;
+    color:rgba(255, 68, 0, 0.705);
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link{
+    
+    padding: 20px 30px;
+    color:orangered;
+    text-decoration: none;
+    border-radius: 250px;
+    font-weight: bold;
+    background: black;
+    border: 1px solid grey;
+    cursor: pointer;
+ 
+   
+}
+
+.link:hover{
+    background-color: grey;
+    color: coral;
+
+}
+
