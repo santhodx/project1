@@ -2,10 +2,13 @@ body{
     font-family: latha;
     color:white;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-    url(../pizza.jpg);
+    url(../images/pizza.jpg)no-repeat center center fixed;
     background-size: cover;
 }
 
+#indexx{
+    display: none;
+}
 .box{
     position: relative;
     display: flex;
@@ -58,7 +61,7 @@ ul li a:hover{ color:white;}
 .contact .content h2{
     font-size: 40px;
     margin-top: -140px;
-    margin-left: 300px;
+    text-align: center;
     color: orangered;
 }
 .contact .content p{
@@ -105,14 +108,14 @@ ul li a:hover{ color:white;}
 
 .contactForm h2{}
 
-.contactForm .inputBox{
+.contactForm .feedback{
     position: relative;
     width: 100%;
     margin-top: 10px; 
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea
+.contactForm .feedback input,
+.contactForm .feedback textarea
 {
     width: 100%;
     padding: 5px 0;
@@ -123,7 +126,7 @@ ul li a:hover{ color:white;}
     resize: none;
 }
 
-.contactForm .inputBox span{
+.contactForm .feedback span{
     position: absolute;
     color: grey;
     left:0;
@@ -134,8 +137,45 @@ ul li a:hover{ color:white;}
     
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox textarea:focus ~ span
+.contactForm .feedback input:focus ~ span,
+.contactForm .feedback textarea:focus ~ span
 {
     transform: translateY(-25px);
+}
+
+#menu-button{
+    display: none;
+}
+@media (max-width: 900px){
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+
+
+    ul{
+        display: none;
+        
+    }
+    #indexx{
+        display: unset;
+    }
+    ul.open{
+        display: flex;
+        position: absolute;
+        background: black;
+       
+        flex-direction: column;
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    
+    #menu-button{
+        display: flex;
+    }
 }

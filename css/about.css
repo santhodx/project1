@@ -3,8 +3,12 @@ body{
     color:white;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
     
-        ,url(../images/pizza.jpg)no-repeat;
+        ,url(../images/pizza.jpg)no-repeat center center fixed;
     background-size: cover;
+}
+
+#indexx{
+    display: none;
 }
 
 .box{
@@ -12,14 +16,7 @@ body{
     display: flex;
     justify-content:space-evenly
     }
-.note{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
        
-
 
  ul{
     float: right;
@@ -59,57 +56,80 @@ ul li a:hover{ color:white;}
     
 }
 
-.about{
-    margin: 30px 0;
+.items{
+    flex: 0 0 calc(30.3% - 14px);
+}
+
+.middle{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 40px;
+    
 }
 
-.about-icon .fas{
-    font-size: 60px;
-    color: coral;
-    margin-right: 20px;
 
-}
-.about-subtitile{
-    text-transform: capitalize;
-    color: orange;
-    font-size: 25px;
+.caption{
+     color: orange;
+    font-size: 28px;
 }
 
 .info{
     margin-top: 10px;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
-.about-icon:hover .fas, .about-subtitile:hover{
-    transition: transform 2s ease, color 2s ease;
+.caption:hover{
+    transition: transform 1.5s ease, color 1.5s ease;
     transform: translateY(-10px);
     color: orangered;
     cursor: pointer;
 }
 
-@media screen and (min-width: 576px){
-    .about-center{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 30px;
-        margin-left: 40px;
-        
-    }
-    .about{
-        flex: 0 0 calc(33.3% - 16px);
-    }
-}
-@media screen and (min-width: 972px){
-    .about{
-        flex: 0 0 calc(33.3% - 16px);
-    }
+#menu-button{
+    display: none;
 }
 
-footer{
-    background-color: grey;
-    height: 100px;
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 900px){
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+
+
+    ul{
+        display: none;
+        
+    }
+    #indexx{
+        display: unset;
+    }
+    ul.open{
+        display: flex;
+        position: absolute;
+        background: black;
+       
+        flex-direction: column;
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    
+    #menu-button{
+        display: flex;        
+    }
+
+    .items{
+        margin: 30px 0;
+        display: flex;
+    }
+
 }
+
+
+

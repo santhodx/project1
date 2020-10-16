@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="logo.png">
     <title>Gallery</title>
     <link rel="stylesheet" href="css/team.css">
+    <script defer src="navbar.js"></script>
    
 </head> 
 <body>
@@ -14,13 +15,22 @@
             <div class="logo">
                 <a href="index.html"><img src="logo.png"  alt="Logo"></a>
             </div>
-    <ul type="none">
+    <ul id="navigation" type="none">
+        <li id="indexx"><a href="index.html"> Home</a></li>
         <li><a href="about.html"> About</a></li>
         <li><a href="menu.html"> Menu</a></li>
         <li><a href="team.html"> Gallery</a></li>
         <li><a href="contact.html"> Contact</a></li>
         </ul>
         </div>
+
+        <div id="menu-button">
+            <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect fill="red" width="100" height="15"></rect>
+                <rect fill="red" y="30" width="100" height="15"></rect>
+                <rect fill="red" y="60" width="100" height="15"></rect>
+            </svg>
+            </div>
     </header>
 
     <h1>Food Fusion</h1>
@@ -39,7 +49,6 @@
 
     </div>
 
-    <footer>hello</footer>
 
 </body>
 </html>

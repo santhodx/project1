@@ -3,8 +3,11 @@ body{
     color:white;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
     
-        ,url(../images/pizza.jpg)no-repeat;
+        ,url(../images/pizza.jpg)no-repeat center center fixed;
     background-size: cover;
+}
+#indexx{
+    display: none;
 }
 .box{
     position: relative;
@@ -63,4 +66,54 @@ h3{
 .list{
     font-style: italic;
     text-align: center;
+}
+
+#menu-button{
+    display: none;
+}
+
+@media (max-width: 900px){
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+
+
+    ul{
+        display: none;
+        
+    }
+    #indexx{
+        display: unset;
+    }
+    ul.open{
+        display: flex;
+        position: absolute;
+        background: black;
+       
+        flex-direction: column;
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    
+    #menu-button{
+        display: flex;
+        
+        
+    }
+  .main .name{
+    position: relative;
+      text-align: center;
+      margin-top: 200px;
+     
+  }
+  .main .button{
+      position: absolute;
+      text-align: center;
+  }
 }
