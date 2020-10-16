@@ -56,6 +56,10 @@ ul li a:hover{ color:white;}
     
 }
 
+h2{
+    font-family: sans-serif;
+}
+
 .items{
     flex: 0 0 calc(30.3% - 14px);
 }
@@ -90,7 +94,16 @@ ul li a:hover{ color:white;}
 #menu-button{
     display: none;
 }
-
+footer{
+    
+    padding: 10px;
+    position: sticky;
+    color: grey;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    height: 60px;
+    margin-top: 100px;
+}
 @media screen and (max-width: 900px){
     
     header {

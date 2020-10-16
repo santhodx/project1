@@ -55,15 +55,6 @@ ul li a:hover{ color:white;}
 
 }
 
-/* footer{
-    background-color:grey;
-    position: relative;
-    height: 100px;   
-    margin-top: -100px; 
-    margin-left: 0;  
-    clear:both;      
-} */
-
 .name{
     position: absolute;
     top: 50%;
@@ -72,7 +63,7 @@ ul li a:hover{ color:white;}
 }
 
 .name h1{
-    font-style: unset;
+    font-family: fantasy;
     font-size: 70px;
     color:rgba(255, 68, 0, 0.705);
 }
@@ -103,6 +94,17 @@ ul li a:hover{ color:white;}
 }
 #menu-button{
     display: none;
+}
+
+footer{
+    
+    padding: 10px;
+    position: sticky;
+    color: grey;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    height: 60px;
+    margin-top: 350px;
 }
 
 @media (max-width: 900px){
@@ -149,4 +151,5 @@ ul li a:hover{ color:white;}
       position: absolute;
       text-align: center;
   }
+  
 }

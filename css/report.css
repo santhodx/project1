@@ -3,6 +3,9 @@ body{
     margin: 150px;
     
 }
+h1{
+    font-family: sans-serif;
+}
 .content{
     display: flex;
     flex-direction: column;

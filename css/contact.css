@@ -46,12 +46,13 @@ ul li a:hover{ color:white;}
 
 .contact{
     position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
+    padding: 50px 100px;
+    
 }
 .contact .content{
     max-width: 800px;
@@ -106,7 +107,9 @@ ul li a:hover{ color:white;}
     background: black;
 }
 
-.contactForm h2{}
+h2{
+    font-family: sans-serif;
+}
 
 .contactForm .feedback{
     position: relative;
@@ -146,6 +149,18 @@ ul li a:hover{ color:white;}
 #menu-button{
     display: none;
 }
+
+footer{
+    
+    padding: 10px;
+    position: sticky;
+    color: grey;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    height: 60px;
+    margin-top: 10px;
+}
+
 @media (max-width: 900px){
 
     header {
